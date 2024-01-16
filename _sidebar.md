@@ -1,0 +1,2 @@
+- [Home](/)
+- [blog-1](/doc/blog-1.md)
