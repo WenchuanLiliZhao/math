@@ -1,4 +1,5 @@
-# 在数学中寻找人文
+> [!art_title]
+> # Primitive Notions
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget leo eu eros iaculis feugiat sed non libero. Nam aliquet finibus scelerisque. Cras ante neque, tempus vel mauris in, vestibulum fringilla nisl. Suspendisse potenti. Morbi sodales laoreet metus, ac ultricies magna aliquam vel. Integer luctus dolor ut sapien vulputate eleifend. Sed rutrum odio eu metus sodales volutpat. Donec sollicitudin tempus ipsum, in posuere augue. In iaculis augue risus, quis commodo lorem varius eget.
 

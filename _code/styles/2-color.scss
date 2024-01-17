@@ -1,13 +1,19 @@
 :root {
   @media (prefers-color-scheme: light) {
     --color-bg: white;
+    
+
     --color-text: black;
+    --color-text-sec: rgba(0, 0, 0, 0.56);
     --color-border: rgba(0, 0, 0, 0.24);
   }
 
   @media (prefers-color-scheme: dark) {
     --color-bg: black;
+    --color-bg-sec: rgba(255, 255, 255, 0.16);
+
     --color-text: white;
+    --color-text-sec: rgba(255, 255, 255, 0.56);
     --color-border: rgba(255, 255, 255, 0.24);
   }
 }

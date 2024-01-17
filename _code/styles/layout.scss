@@ -20,3 +20,17 @@ main {
     }
   }
 }
+
+.sidebar-toggle {
+  position: fixed;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: rgba(white, 0.08);
+  width: 280px;
+  height: calc(100%);
+  top: 0;
+  left: 0;
+  padding: 24px;
+}

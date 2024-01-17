@@ -1,62 +1,60 @@
+& {
+  --fig-spacing: 16px;
+}
+
 .art_title {
   margin-top: 80px;
   margin-bottom: 32px;
 
   h1 {
-    font-size: 40px;
-    line-height: 1.5;
+    font-size: 48px;
+    line-height: 1.25;
     font-weight: bold;
     margin-top: 0.25em;
   }
   
-  h2 {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: bold;
-    opacity: 0.48;
-  }
-}
+  &::before {
+    content: var(--site-name);
 
-.art_tags {
-  margin: 32px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-text-sec);
+  }
 
   ul {
+    font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    margin-top: 16px;
 
     li {
       display: inline-block;
-      background-color: rgba(white, 0.24);
-      padding: 4px 12px;
+      background-color: var(--color-bg-sec);
+      color: var(--color-text-sec);
+
+      padding: 6px 12px;
       border-radius: 1000px;
     }
   }
 }
 
-:not(.art_title) {
-  h1 {
-    font-size: 40px;
-    line-height: 1.5;
-    margin-top: 0.75em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-  }
+
+h2 {
+  font-size: 32px;
   
-  h2 {
-    font-size: 32px;
-    line-height: 1.5;
-    margin-top: 0.75em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-  }
+  line-height: 1.25;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
 }
+
 
 
 
 h3 {
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.25;
   margin-top: 0.75em;
   margin-bottom: 0.5em;
   font-weight: bold;
@@ -109,10 +107,12 @@ hr {
 }
 
 .figure {
-  margin: 24px 0;
+  margin: 16px 0;
 
   p {
     font-size: 16px;
+    text-align: center;
+    color: var(--color-text-sec);
   }
 
   &.smooth {
@@ -142,4 +142,45 @@ pre {
   background-color: rgba(white, 0.1);
   border: 1px solid rgba(white, 0.08);
   border-radius: 8px;
+}
+
+& {
+  counter-reset: theorem;
+}
+
+.statement {
+  padding-bottom: 16px;
+  
+  
+  &.theorem {
+    counter-increment: theorem;
+    
+    h4 {
+      padding-top: 16px;
+
+      &::before {
+        content: "Theorem " counter(theorem);
+      }
+
+      &::after {
+        content: "\.";
+      }
+
+      span {
+        margin-left: 0.5em;
+
+        &:empty {
+          display: none;
+        }
+
+        &::before {
+          content: "\(";
+        }
+
+        &::after {
+          content: "\)";
+        }
+      }
+    }
+  }
 }
