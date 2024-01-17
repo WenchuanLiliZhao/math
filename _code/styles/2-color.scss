@@ -1,0 +1,22 @@
+:root {
+  @media (prefers-color-scheme: light) {
+    --color-bg: white;
+    --color-text: black;
+    --color-border: rgba(0, 0, 0, 0.24);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --color-bg: black;
+    --color-text: white;
+    --color-border: rgba(255, 255, 255, 0.24);
+  }
+}
+
+
+
+
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}

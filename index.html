@@ -6,17 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <link rel="stylesheet" href="/_code/style.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
+      name: 'Lili’s Blog',
       repo: '',
       loadSidebar: true,
+      auto2top: true,
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      'flexible-alerts': {
+        art_title: {
+          className: "art_title",
+        },
+
+        art_tags: {
+          className: "art_tags",
+        },
+
+        card: {
+          className: "card",
+        },
+
+        summary: {
+          className: "summary",
+        },
+
+        figure: {
+          className: "figure",
+        },
+
+        figure_smooth: {
+          className: "figure smooth",
+        },
       }
     }
   </script>
@@ -31,5 +58,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
 
+  <script src="./_code/script.js"></script>
+  <script src="./_code/callout.js"></script>
 </body>
 </html>

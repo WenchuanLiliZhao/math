@@ -1,0 +1,10 @@
+@import "./1-reset.scss";
+@import "./2-color.scss";
+@import "./font.scss";
+
+
+@import "./layout.scss";
+
+#main {
+  @import "./idMain.scss";
+}
