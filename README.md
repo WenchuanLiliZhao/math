@@ -5,7 +5,7 @@
 > # Motivation of Ordinal Numbers
 
 > [!art_tags]
-> - [mathematics]()
+> - [mathematics](tags/mathematics.md)
 > - [life]()
 
 
