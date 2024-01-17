@@ -5,8 +5,8 @@
 > # Motivation of Ordinal Numbers
 
 > [!art_tags]
-> - [mathematics](tags/mathematics.md)
-> - [life]()
+> - [[tags/mathematics|mathematics]]
+
 
 
 ## Heading 2
