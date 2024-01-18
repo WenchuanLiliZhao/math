@@ -1,8 +1,68 @@
-
+:root {
+  --sidebar-width: 280px;
+}
 
 
 main {
+
+  .sidebar-toggle {
+    position: fixed;
+    z-index: 100;
+    left: calc(var(--sidebar-width) + 16px);
+    top: 16px;
+    
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+
+    .sidebar-toggle-button {
+      position: fixed;
+      left: calc(var(--sidebar-width) + 16px);
+      top: 16px;
+      
+      width: 32px;
+      height: 32px;
+      padding: 4px;
+      padding-top: 5px;
+      border-radius: 8px;
+
+      transition: 0.3s;
+      
+      &:hover {
+        background-color: var(--color-bg-emph-hex);
+      }
+
+      span {
+        display: block;
+        width: 16px;
+        height: 2px;
+        margin-left: 4px;
+        margin-top: 4px;
+        background-color: var(--color-text-sec);
+      }
+    }
+  }
+
+  .sidebar {
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--color-bg-sec-hex);
+    width: var(--sidebar-width);
+    height: calc(100%);
+    top: 0;
+    left: 0;
+    padding: 24px;
+
+    transition: transform 0.3s;
+  }
+
+  
+
   .content {
+    width: calc(100%);
+    // margin-left: var(--sidebar-width);
+
     .markdown-section {
       max-width: 800px;
       margin: 0 auto;
@@ -19,18 +79,61 @@ main {
       }
     }
   }
+
+  
 }
 
-.sidebar-toggle {
-  position: fixed;
+body.close {
+  main {
+    .sidebar {
+      transform: translate(-120%);
+    }
+  
+    .sidebar-toggle {
+      .sidebar-toggle-button {
+        left: 16px;
+      }
+    }
+  }
 }
 
-.sidebar {
-  position: fixed;
-  background-color: rgba(white, 0.08);
-  width: 280px;
-  height: calc(100%);
-  top: 0;
-  left: 0;
-  padding: 24px;
+@media screen and (max-width: 1400px) {
+  main {
+    .sidebar {
+      transform: translate(-120%);
+    }
+
+    .sidebar-toggle {
+      .sidebar-toggle-button {
+        left: 16px;
+        background-color: var(--color-bg-emph-hex);
+      }
+    }
+  }
+
+  body.close {
+    overflow: hidden;
+
+    main {
+      .sidebar {
+        transform: translate(0);
+      }
+
+      .sidebar-toggle {
+        width: 100% !important;
+        height: 100% !important;
+        left: 0;
+        height: 0;
+
+        .sidebar-toggle-button {
+          left: calc(var(--sidebar-width) + 16px);
+        }
+      }
+
+      .content {
+        opacity: 0.56;
+      }
+    }
+    
+  }
 }

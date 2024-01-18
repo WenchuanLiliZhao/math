@@ -30,7 +30,7 @@
 
     li {
       display: inline-block;
-      background-color: var(--color-bg-sec);
+      background-color: var(--color-bg-emph-hex);
       color: var(--color-text-sec);
 
       padding: 6px 12px;
@@ -106,7 +106,7 @@ p {
 }
 
 hr {
-  border-top: 1px solid rgba(black, 0.12);
+  border-top: 1px solid var(--color-border);
   margin: 18px 0;
 }
 

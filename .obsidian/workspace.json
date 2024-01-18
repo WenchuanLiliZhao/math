@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction.md",
+                "file": "_sidebar.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction.md",
+                "file": "_sidebar.md",
                 "mode": "preview",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction.md",
+                "file": "_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction.md",
+                "file": "_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction.md"
+                "file": "_sidebar.md"
               }
             }
           }
@@ -168,8 +168,16 @@
   },
   "active": "288db302a46f8ca1",
   "lastOpenFiles": [
-    "README.md",
     "Introduction.md",
+    "_code/styles/0-index.css",
+    "_code/styles/idMain.css",
+    "_code/styles/1-reset.css",
+    "_code/styles/2-color.css",
+    "_code/styles/font.css",
+    "_code/styles/sidebar.css",
+    "_code/styles/layout.css",
+    "_code/styles/sidebar.scss",
+    "README.md",
     "media/circular-definition.svg",
     "media/hilberts-axiom-1.svg",
     "media",
@@ -181,7 +189,6 @@
     "home.md",
     "pages/home.md",
     "_sidebar.md",
-    "_code/styles/sidebar.scss",
     "_code/pagination.js",
     "tags/mathematics.md",
     "tags-mathematics-mathematics.md",
