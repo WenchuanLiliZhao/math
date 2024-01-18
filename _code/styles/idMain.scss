@@ -85,6 +85,10 @@ h6 {
 }
 
 p {
+  &:empty {
+    display: none;
+  }
+
   font-size: 18px;
   line-height: 1.75;
   margin: 0.5em 0;

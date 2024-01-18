@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_sidebar.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_sidebar.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_sidebar.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_sidebar.md"
+                "file": "README.md"
               }
             }
           }
@@ -181,9 +181,9 @@
   },
   "active": "b9da5843bf6e0e67",
   "lastOpenFiles": [
+    "_sidebar.md",
     "notes/Fundamental Ideas of Set Theory.md",
     "notes/Primitive Notions.md",
-    "_sidebar.md",
     "README.md",
     "_code/styles/sidebar.scss",
     "_code/pagination.js",

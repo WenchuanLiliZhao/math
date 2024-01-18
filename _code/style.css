@@ -185,6 +185,8 @@ main .content .markdown-section {
   font-size: 18px;
   line-height: 1.75;
   margin: 0.5em 0; }
+  #main p:empty {
+    display: none; }
   #main p a {
     text-decoration: underline; }
     #main p a[href*="https://"]:after {

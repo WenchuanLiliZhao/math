@@ -7,7 +7,7 @@
 
 > [!figure]
 > 
-> ![](https://upload.wikimedia.org/wikipedia/commons/4/46/Trefoil_knot_arb.png)
+> ![](https://doodleipsum.com/1200/outline?bg=825DEB&i=97096b247f2696b33713d4d2b7fedf2a)
 
 Nullam dignissim justo et consequat cursus. Fusce fringilla accumsan est, sed fermentum velit molestie sit amet. Integer id massa et mi iaculis iaculis. Vivamus sodales augue posuere euismod commodo. Vivamus pulvinar elementum malesuada. Aliquam sollicitudin ultrices dictum. Sed vehicula efficitur odio. Phasellus lobortis consequat orci in ullamcorper. Proin magna magna, lobortis sed tincidunt non, euismod sed lorem. Sed nec mollis quam, eget placerat ligula. Integer et luctus purus. Proin maximus lorem erat, in cursus leo convallis a.
 
