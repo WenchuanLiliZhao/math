@@ -101,9 +101,9 @@ button {
     --color-border-emph: rgba(0, 0, 0, 0.24); } }
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: black;
+    --color-bg: #18171C;
     --color-bg-sec: rgba(255, 255, 255, 0.08);
-    --color-bg-sec-hex: #141414;
+    --color-bg-sec-hex: #23212B;
     --color-bg-emph: rgba(255, 255, 255, 0.16);
     --color-bg-emph-hex: #292929;
     --color-text: white;
@@ -117,7 +117,7 @@ body {
   color: var(--color-text); }
 
 .katex {
-  font-size: 1.1em !important; }
+  font-size: 1.05em !important; }
 
 .katex-display {
   overflow-x: auto;
@@ -258,8 +258,11 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
         .sidebar .sidebar-nav li ul li:hover::before {
           background-color: var(--color-border-emph); }
 
+#footer {
+  margin-top: 160px; }
+
 #main {
-  --fig-spacing: 16px; }
+  --fig-spacing: 24px; }
 #main .art_title {
   margin-top: 80px;
   margin-bottom: 32px; }
@@ -281,8 +284,7 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
     margin-top: 16px; }
     #main .art_title ul li {
       display: inline-block;
-      background-color: var(--color-bg-emph-hex);
-      color: var(--color-text-sec);
+      background-color: #329A53;
       padding: 6px 12px;
       border-radius: 1000px; }
 #main h2 {
@@ -325,11 +327,15 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
     text-decoration: underline; }
     #main p a[href*="https://"]:after {
       display: inline-block; }
+#main strong {
+  font-weight: bold; }
+#main em {
+  font-style: italic; }
 #main hr {
   border-top: 1px solid var(--color-border);
   margin: 18px 0; }
 #main .figure {
-  margin: 16px 0; }
+  margin: var(--fig-spacing) 0; }
   #main .figure p {
     font-size: 16px;
     text-align: center;
@@ -353,20 +359,23 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
 #main {
   counter-reset: theorem; }
 #main .statement {
-  padding-bottom: 16px; }
+  padding: 16px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin: var(--fig-spacing) 0; }
+  #main .statement h4 {
+    margin-top: 9px; }
   #main .statement.theorem {
     counter-increment: theorem; }
-    #main .statement.theorem h4 {
-      padding-top: 16px; }
-      #main .statement.theorem h4::before {
-        content: "Theorem " counter(theorem); }
-      #main .statement.theorem h4::after {
-        content: "\."; }
-      #main .statement.theorem h4 span {
-        margin-left: 0.5em; }
-        #main .statement.theorem h4 span:empty {
-          display: none; }
-        #main .statement.theorem h4 span::before {
-          content: "\("; }
-        #main .statement.theorem h4 span::after {
-          content: "\)"; }
+    #main .statement.theorem h4::before {
+      content: "Theorem " counter(theorem); }
+    #main .statement.theorem h4::after {
+      content: "\."; }
+    #main .statement.theorem h4 span {
+      margin-left: 0.5em; }
+      #main .statement.theorem h4 span:empty {
+        display: none; }
+      #main .statement.theorem h4 span::before {
+        content: "\("; }
+      #main .statement.theorem h4 span::after {
+        content: "\)"; }

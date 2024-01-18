@@ -1,5 +1,5 @@
 & {
-  --fig-spacing: 16px;
+  --fig-spacing: 24px;
 }
 
 .art_title {
@@ -30,8 +30,8 @@
 
     li {
       display: inline-block;
-      background-color: var(--color-bg-emph-hex);
-      color: var(--color-text-sec);
+      background-color: #329A53;
+      // color: var(--color-text-sec);
 
       padding: 6px 12px;
       border-radius: 1000px;
@@ -105,13 +105,21 @@ p {
   }
 }
 
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
 hr {
   border-top: 1px solid var(--color-border);
   margin: 18px 0;
 }
 
 .figure {
-  margin: 16px 0;
+  margin: var(--fig-spacing) 0;
 
   p {
     font-size: 16px;
@@ -153,14 +161,22 @@ pre {
 }
 
 .statement {
-  padding-bottom: 16px;
-  
+  padding: 16px 24px;
+  border: 1px solid var(--color-border);
+  // ……如果想让 statements 看上去像是 box 的话
+
+  border-radius: 8px;
+  margin: var(--fig-spacing) 0;
+
+  h4 {
+    margin-top: 9px;
+  }
   
   &.theorem {
     counter-increment: theorem;
     
     h4 {
-      padding-top: 16px;
+      
 
       &::before {
         content: "Theorem " counter(theorem);
