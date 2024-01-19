@@ -129,7 +129,8 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: var(--font-sans); }
+  font-family: var(--font-sans);
+  font-size: 16px; }
 
 :root {
   --sidebar-width: 280px; }
@@ -285,25 +286,25 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
   margin-bottom: 0.5em;
   font-weight: bold; }
 #main h4 {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.75;
   margin-top: 0.75em;
   margin-bottom: 0.5em;
   font-weight: bold; }
 #main h5 {
-  font-size: 16px;
-  line-height: 1.75;
-  margin-top: 0.75em;
-  margin-bottom: 0.5em;
-  font-weight: bold; }
-#main h6 {
   font-size: 14px;
   line-height: 1.75;
   margin-top: 0.75em;
   margin-bottom: 0.5em;
   font-weight: bold; }
+#main h6 {
+  font-size: 12px;
+  line-height: 1.75;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+  font-weight: bold; }
 #main p, #main li {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.75;
   margin: 0.5em 0; }
   #main p:empty, #main li:empty {
