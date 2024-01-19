@@ -1,9 +1,5 @@
 > [!art_title]
 > # Introduction
->
-> - Primitive notion
-> - Axiom
-> - Definition
 
 It was around the age of 33 that I began to study mathematics. The reason for this was that during that time, I purchased a beautiful book by Taschen, which was a copy of Euclid's *Elements*. The layout and graphic design of the book was stunning, and this was why I brought it. However, as I began to read the text itself, I came to realize why this book was worth being designed in such a way.
 
@@ -22,7 +18,7 @@ Hilbert's solution to the "gaps" in the definitions of *Elements* was to accept 
 If we introduce first-order logic, using six predicates to represent Hilbert's six primitive notion, we will see a beautiful picture: the entire Euclidean geometry can be clearly described using these symbols. For example, if we use capital Latin letters $A, B, C, \ldots$ to represent points, lowercase Latin letters $a, b, c, \ldots$ to represent lines, and use capital letter pairs, say $AB$, to represent the line containing $A$ and $B$, and use the equal sign $=$ to represent the congruence relation, then Hilbert's Axiom 1, which states that two points determine a line, can be written as:
 
 > [!figure]
-> ![media/hilberts-axiom-1.svg](media/hilberts-axiom-1.svg)
+> ![_media/hilberts-axiom-1.svg](_media/hilberts-axiom-1.svg)
 > 
 > In words, Two distinct points always completely determine a straight line.
 
@@ -35,7 +31,7 @@ However, a simple fact that surprises many people is that **we cannot define all
 
 > [!figure]
 > 
-> ![media/circular-definition.svg](media/circular-definition.svg)
+> ![_media/circular-definition.svg](_media/circular-definition.svg)
 > 
 > In this diagram, concept $A$ is circularly defined, as $A \to B \to C \to A$.
 

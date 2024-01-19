@@ -1,9 +1,6 @@
 > [!art_title]
 > 
 > # Introduction to Set Theory
-> 
-> - Motivation of set theory
-> - Inconsistency of naïve set theory
 
 Several weeks ago, when I was talking about mathematics with a junior high school girl, I felt it is quite challenging to explain what functions are in a generalized sense without using the language of set theory. (Students in that age rarely know about set theory.) It is also difficult to explain why the variables of functions are not needed to be numbers, but also equations, functions, or something else. Finally, her mind was thoroughly bewildered by my chaotic explanations - I messed up.
 
@@ -49,7 +46,7 @@ In this sense, the axiom of abstraction is modified as:
 
 > [!statement]
 > 
-> #### Schema of class comprehension (informal expression)
+> #### Schema of class comprehension
 > 
 > Given a predicate $P(x)$, then, there is a class
 > $$
@@ -67,7 +64,7 @@ In some axiomatization, take Zermelo-Fraenkel set theory (ZF) for instance, sets
 
 > [!statement]
 > 
-> #### Axiom schema of specification (informal expression)
+> #### Axiom schema of specification
 > 
 > Given a predicate $P(x)$, for any set $A$, there is a subset $B$,
 > 

@@ -20,23 +20,6 @@
     font-weight: bold;
     color: var(--color-text-sec);
   }
-
-  ul {
-    font-size: 14px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 16px;
-
-    li {
-      display: inline-block;
-      background-color: #329A53;
-      // color: var(--color-text-sec);
-
-      padding: 6px 12px;
-      border-radius: 1000px;
-    }
-  }
 }
 
 
@@ -84,7 +67,7 @@ h6 {
   font-weight: bold;
 }
 
-p {
+p, li {
   &:empty {
     display: none;
   }
@@ -158,49 +141,28 @@ pre {
 
 & {
   counter-reset: theorem;
+  counter-reset: definition;
 }
 
-.statement {
-  padding: 16px 24px;
-  border: 1px solid var(--color-border);
-  // ……如果想让 statements 看上去像是 box 的话
 
-  border-radius: 8px;
-  margin: var(--fig-spacing) 0;
 
-  h4 {
-    margin-top: 9px;
+li {
+  margin-left: 1.75em;
+}
+
+
+ul {
+  li {
+    list-style: disc;
   }
-  
-  &.theorem {
-    counter-increment: theorem;
-    
-    h4 {
+}
+
+ol {
+  li {
+    list-style: decimal;
+
+    &::marker {
       
-
-      &::before {
-        content: "Theorem " counter(theorem);
-      }
-
-      &::after {
-        content: "\.";
-      }
-
-      span {
-        margin-left: 0.5em;
-
-        &:empty {
-          display: none;
-        }
-
-        &::before {
-          content: "\(";
-        }
-
-        &::after {
-          content: "\)";
-        }
-      }
     }
   }
 }

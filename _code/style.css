@@ -90,22 +90,18 @@ button {
 @media (prefers-color-scheme: light) {
   :root {
     --color-bg: white;
-    --color-bg-sec: rgba(0, 0, 0, 0.04);
-    --color-bg-sec-hex: #f5f5f5;
-    --color-bg-emph: rgba(0, 0, 0, 0.08);
-    --color-bg-emph-hex: #EBEBEB;
-    --color-text: black;
-    --color-text-sec: rgba(0, 0, 0, 0.56);
-    --color-text-neg: rgba(0, 0, 0, 0.32);
+    --color-bg-sec: #F9F8FF;
+    --color-bg-emph: #EFEEF5;
+    --color-text: #18171C;
+    --color-text-sec: #23212B;
+    --color-text-neg: #33303F;
     --color-border: rgba(0, 0, 0, 0.16);
     --color-border-emph: rgba(0, 0, 0, 0.24); } }
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #18171C;
-    --color-bg-sec: rgba(255, 255, 255, 0.08);
-    --color-bg-sec-hex: #23212B;
-    --color-bg-emph: rgba(255, 255, 255, 0.16);
-    --color-bg-emph-hex: #292929;
+    --color-bg-sec: #23212B;
+    --color-bg-emph: #33303F;
     --color-text: white;
     --color-text-sec: rgba(255, 255, 255, 0.56);
     --color-text-neg: rgba(255, 255, 255, 0.32);
@@ -142,7 +138,6 @@ main .sidebar-toggle {
   position: fixed;
   z-index: 100;
   left: calc(var(--sidebar-width) + 16px);
-  top: 16px;
   width: 32px;
   height: 32px;
   cursor: pointer; }
@@ -157,7 +152,7 @@ main .sidebar-toggle {
     border-radius: 8px;
     transition: 0.3s; }
     main .sidebar-toggle .sidebar-toggle-button:hover {
-      background-color: var(--color-bg-emph-hex); }
+      background-color: var(--color-bg-emph); }
     main .sidebar-toggle .sidebar-toggle-button span {
       display: block;
       width: 16px;
@@ -168,7 +163,7 @@ main .sidebar-toggle {
 main .sidebar {
   position: fixed;
   z-index: 1000;
-  background-color: var(--color-bg-sec-hex);
+  background-color: var(--color-bg-sec);
   width: var(--sidebar-width);
   height: calc(100%);
   top: 0;
@@ -197,7 +192,7 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
     transform: translate(-120%); }
   main .sidebar-toggle .sidebar-toggle-button {
     left: 16px;
-    background-color: var(--color-bg-emph-hex); }
+    background-color: var(--color-bg-emph); }
 
   body.close {
     overflow: hidden; }
@@ -207,11 +202,10 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
       width: 100% !important;
       height: 100% !important;
       left: 0;
-      height: 0; }
+      height: 0;
+      background-color: rgba(0, 0, 0, 0.4); }
       body.close main .sidebar-toggle .sidebar-toggle-button {
-        left: calc(var(--sidebar-width) + 16px); }
-    body.close main .content {
-      opacity: 0.56; } }
+        left: calc(var(--sidebar-width) + 16px); } }
 .sidebar h1.app-name {
   font-size: 24px;
   font-weight: bold;
@@ -221,30 +215,32 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
   --font-size: 14px;
   --line-spacing: 4px;
   --line-height: calc(var(--font-size) + (2 * var(--line-spacing))); }
-  .sidebar .sidebar-nav li {
+  .sidebar .sidebar-nav > ul > li {
+    margin-top: 4px; }
+  .sidebar .sidebar-nav > ul li {
     font-size: var(--font-size);
     line-height: var(--line-height);
     padding-top: 4px;
     padding-bottom: 4px;
     color: var(--color-text-neg);
     font-weight: bold; }
-    .sidebar .sidebar-nav li a {
+    .sidebar .sidebar-nav > ul li a {
       font-weight: normal;
       color: var(--color-text-sec); }
-      .sidebar .sidebar-nav li a:hover {
+      .sidebar .sidebar-nav > ul li a:hover {
         color: var(--color-text); }
-    .sidebar .sidebar-nav li.active a {
+    .sidebar .sidebar-nav > ul li.active a {
       color: var(--color-text); }
-    .sidebar .sidebar-nav li.active::before {
+    .sidebar .sidebar-nav > ul li.active::before {
       background-color: var(--color-text) !important; }
-    .sidebar .sidebar-nav li ul {
+    .sidebar .sidebar-nav > ul li ul {
       padding-top: 4px;
       padding-bottom: 4px; }
-      .sidebar .sidebar-nav li ul li {
+      .sidebar .sidebar-nav > ul li ul li {
         padding-left: 12px;
         display: flex;
         position: relative; }
-        .sidebar .sidebar-nav li ul li::before {
+        .sidebar .sidebar-nav > ul li ul li::before {
           content: '';
           display: block;
           position: absolute;
@@ -253,9 +249,9 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
           width: 1px;
           height: 100%;
           background-color: var(--color-border); }
-        .sidebar .sidebar-nav li ul li:last-of-type::before {
+        .sidebar .sidebar-nav > ul li ul li:last-of-type::before {
           height: calc(100% - var(--line-spacing)); }
-        .sidebar .sidebar-nav li ul li:hover::before {
+        .sidebar .sidebar-nav > ul li ul li:hover::before {
           background-color: var(--color-border-emph); }
 
 #footer {
@@ -276,17 +272,6 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
     font-size: 20px;
     font-weight: bold;
     color: var(--color-text-sec); }
-  #main .art_title ul {
-    font-size: 14px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 16px; }
-    #main .art_title ul li {
-      display: inline-block;
-      background-color: #329A53;
-      padding: 6px 12px;
-      border-radius: 1000px; }
 #main h2 {
   font-size: 32px;
   line-height: 1.25;
@@ -317,15 +302,15 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
   margin-top: 0.75em;
   margin-bottom: 0.5em;
   font-weight: bold; }
-#main p {
+#main p, #main li {
   font-size: 18px;
   line-height: 1.75;
   margin: 0.5em 0; }
-  #main p:empty {
+  #main p:empty, #main li:empty {
     display: none; }
-  #main p a {
+  #main p a, #main li a {
     text-decoration: underline; }
-    #main p a[href*="https://"]:after {
+    #main p a[href*="https://"]:after, #main li a[href*="https://"]:after {
       display: inline-block; }
 #main strong {
   font-weight: bold; }
@@ -357,7 +342,20 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px; }
 #main {
-  counter-reset: theorem; }
+  counter-reset: theorem;
+  counter-reset: definition; }
+#main li {
+  margin-left: 1.75em; }
+#main ul li {
+  list-style: disc; }
+#main ol li {
+  list-style: decimal; }
+#main .note {
+  color: var(--color-text-sec);
+  border-left: 2px solid var(--color-border);
+  padding-left: 8px; }
+  #main .note li, #main .note p {
+    font-size: 14px; }
 #main .statement {
   padding: 16px 24px;
   border: 1px solid var(--color-border);
@@ -367,15 +365,33 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
     margin-top: 9px; }
   #main .statement.theorem {
     counter-increment: theorem; }
-    #main .statement.theorem h4::before {
-      content: "Theorem " counter(theorem); }
-    #main .statement.theorem h4::after {
-      content: "\."; }
-    #main .statement.theorem h4 span {
-      margin-left: 0.5em; }
-      #main .statement.theorem h4 span:empty {
-        display: none; }
-      #main .statement.theorem h4 span::before {
-        content: "\("; }
-      #main .statement.theorem h4 span::after {
-        content: "\)"; }
+    #main .statement.theorem h4 {
+      margin-top: 9px; }
+      #main .statement.theorem h4 ::before {
+        content: "Theorem " counter(theorem); }
+      #main .statement.theorem h4::after {
+        content: "\."; }
+      #main .statement.theorem h4 span {
+        margin-left: 0.5em; }
+        #main .statement.theorem h4 span:empty {
+          display: none; }
+        #main .statement.theorem h4 span::before {
+          content: "\("; }
+        #main .statement.theorem h4 span::after {
+          content: "\)"; }
+  #main .statement.definition {
+    counter-increment: definition; }
+    #main .statement.definition h4 {
+      margin-top: 9px; }
+      #main .statement.definition h4 ::before {
+        content: "Definition " counter(definition); }
+      #main .statement.definition h4::after {
+        content: "\."; }
+      #main .statement.definition h4 span {
+        margin-left: 0.5em; }
+        #main .statement.definition h4 span:empty {
+          display: none; }
+        #main .statement.definition h4 span::before {
+          content: "\("; }
+        #main .statement.definition h4 span::after {
+          content: "\)"; }
