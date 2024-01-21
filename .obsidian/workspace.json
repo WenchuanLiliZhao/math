@@ -6,7 +6,7 @@
       {
         "id": "cee63f9ded7e20f6",
         "type": "tabs",
-        "dimension": 22.664835164835164,
+        "dimension": 24.943052391799544,
         "children": [
           {
             "id": "e56f44dce7f43c83",
@@ -19,16 +19,41 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "215b0d93e13bb0a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "appendix/Index of MK-Axioms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "9b7640750e35decd",
         "type": "tabs",
-        "dimension": 38.667582417582416,
+        "dimension": 37.52847380410023,
         "children": [
           {
-            "id": "288db302a46f8ca1",
+            "id": "335b7c715216c859",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/Introduction to Set Theory.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96b6dc44f538d0f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -40,38 +65,38 @@
             }
           },
           {
-            "id": "54c7ce0427b6d8c9",
+            "id": "b2f3eea5c87cb82f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "notes/✏️ Relations and Functions.md",
                 "mode": "source",
                 "source": false
               }
             },
-            "group": "7f73b9f66921cb19"
+            "group": "979d9cb270ef527c"
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
-        "id": "3356b10e73385138",
+        "id": "83acc65a1817b2c4",
         "type": "tabs",
-        "dimension": 38.667582417582416,
+        "dimension": 37.52847380410023,
         "children": [
           {
-            "id": "a025fb167d847d8f",
+            "id": "0e1208649a3c33f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "notes/✏️ Relations and Functions.md",
                 "mode": "preview",
                 "source": false
               }
             },
-            "group": "7f73b9f66921cb19"
+            "group": "979d9cb270ef527c"
           }
         ]
       }
@@ -140,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "notes/✏️ Relations and Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "notes/✏️ Relations and Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Relations and Functions.md"
+                "file": "notes/✏️ Relations and Functions.md"
               }
             }
           }
@@ -201,15 +226,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54c7ce0427b6d8c9",
+  "active": "0e1208649a3c33f9",
   "lastOpenFiles": [
-    "_sidebar.md",
-    "notes/Relations and Functions.md",
     "notes/Morse-Kelly Set Theory.md",
+    "notes/✏️ Relations and Functions.md",
     "appendix/Index of MK-Axioms.md",
+    "_sidebar.md",
+    "notes/✏️ Natural Numbers.md",
     "notes/Introduction to Set Theory.md",
-    "_code/styles/callouts.scss",
     "Introduction.md",
+    "_code/styles/callouts.scss",
     "appendix/Reference.md",
     "appendix",
     "README.md",

@@ -87,26 +87,15 @@ button {
     padding: 0; }
 
 /* Remove excess padding and border in Firefox 4+ */
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-bg: white;
-    --color-bg-sec: #F9F8FF;
-    --color-bg-emph: #EFEEF5;
-    --color-text: #18171C;
-    --color-text-sec: #23212B;
-    --color-text-neg: #33303F;
-    --color-border: rgba(0, 0, 0, 0.16);
-    --color-border-emph: rgba(0, 0, 0, 0.24); } }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #18171C;
-    --color-bg-sec: #23212B;
-    --color-bg-emph: #33303F;
-    --color-text: white;
-    --color-text-sec: rgba(255, 255, 255, 0.56);
-    --color-text-neg: rgba(255, 255, 255, 0.32);
-    --color-border: rgba(255, 255, 255, 0.16);
-    --color-border-emph: rgba(255, 255, 255, 0.32); } }
+:root {
+  --color-bg: white;
+  --color-bg-sec: #F9F8FF;
+  --color-bg-emph: #EFEEF5;
+  --color-text: rgba(0, 0, 0, 0.88);
+  --color-text-sec: rgba(0, 0, 0, 0.48);
+  --color-text-neg: rgba(0, 0, 0, 0.24);
+  --color-border: rgba(0, 0, 0, 0.16);
+  --color-border-emph: rgba(0, 0, 0, 0.24); }
 
 body {
   background-color: var(--color-bg);
@@ -395,4 +384,20 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
         #main .statement.definition h4 span::before {
           content: "\("; }
         #main .statement.definition h4 span::after {
+          content: "\)"; }
+  #main .statement.corollary {
+    counter-increment: corollary; }
+    #main .statement.corollary h4 {
+      margin-top: 9px; }
+      #main .statement.corollary h4 ::before {
+        content: "Corollary " counter(corollary); }
+      #main .statement.corollary h4::after {
+        content: "\."; }
+      #main .statement.corollary h4 span {
+        margin-left: 0.5em; }
+        #main .statement.corollary h4 span:empty {
+          display: none; }
+        #main .statement.corollary h4 span::before {
+          content: "\("; }
+        #main .statement.corollary h4 span::after {
           content: "\)"; }

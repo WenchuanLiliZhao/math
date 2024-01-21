@@ -81,7 +81,9 @@ As to the answer to the question of whether there can be any set $x$ that sati
 But, for mathematicians who believe in a different set of axioms, things might be different. In 1917, Dmitry Mirimanoff introduced a self-contained set, $x_0$, which, at a minimum, consists of only one element:
 
 
-$$ x_0 = \left\{ \underbrace{\left\{ \underbrace{\left\{ \underbrace{\left\{ \cdots \right\}}_{x_3} \right\}}_{x_2} \right\}}_{x_1} \right\}. $$
+$$
+x_0 = \left\{ \underbrace{\left\{ \underbrace{\left\{ \underbrace{\left\{ \cdots \right\}}_{x_3} \right\}}_{x_2} \right\}}_{x_1} \right\}.
+$$
 
 Thus, for any natural number $i$, we always have $x_i = x_{i + 1}$, so $x_i \in x_i$.
 

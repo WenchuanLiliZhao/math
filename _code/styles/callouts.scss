@@ -60,6 +60,10 @@
     @include indexedStatement("Definition", definition)
   }
 
+  &.corollary {
+    @include indexedStatement("Corollary", corollary)
+  }
+
   
   
   

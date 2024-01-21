@@ -36,7 +36,7 @@
 > 
 > #### Axiom of paring
 > 
-> For any sets $x$ and $y$, the unordered pair $\{x,y\}$ is a set. In symbols,
+> For any sets $x$ and $y$, the unordered pair $\{x,y\}$ is a set.
 
 
 

@@ -26,7 +26,16 @@ $$
 
 If $t$ is a primitive notion, then $t$ is not only defined, but also **assumed as defined** - only its explicit definition does not exist in $T$. In this case, the existence of $[t]$ cannot be proven in $T$, but assumed to be true; otherwise, $t$ is a primitive notion indicates objects does not exist in $T$. This is paradoxical.
 
-For this reason, in MK, the existence of classes and membership are assumed; they are "axioms" without explicit statement in the theory. Thus, the existence of elements is a straight consequence of the set of primitive notions. And, as terms, element and set, indicate the same objects, set is defined as element.
+For this reason, in MK, the existence of classes and membership are assumed; they are "axioms" without explicit statement in the theory.
+
+$$
+\begin{aligned}
+&\text{Existence of classes:} & \exists x\; (x = x); \\
+&\text{Existence of Membership:} & \exists x\; \exists y\; (x \in y);
+\end{aligned}
+$$
+
+Thus, the existence of elements is a straight consequence of the set of primitive notions. And, as terms, element and set, indicate the same objects, set is defined as element.
 
 > [!definition]
 > 
@@ -46,6 +55,25 @@ For this reason, in MK, the existence of classes and membership are assumed; the
 > but not the converse. In this case, set has to be a primitive notion.
 
 Those classes which are not set are called **proper class**. But, note that we can define proper classes so far, because the necessary axiom is not introduced yet.
+
+> [!statement]
+> 
+> Let $x$ and $y$ be classes. $x$ is a **subset** of $y$, or $y$ is a **superclass** of $x$, denoted by $x \subseteq y$, if and only if
+> $$
+> \forall z\; (z \in x \implies z \in y).
+> $$
+
+Subclass is another concept that can be straightly derived from the postulations of primitive notions, because, at least, by the property of $=$, we have
+$$
+x = x \implies \forall z\; (z \in x \implies z \in z),
+$$
+namely, $x \subseteq x$.
+
+But, note that the definition of proper subclasses cannot be derived from the above postulations. If $x$ is a proper subclass of $y$, i.e., $x \subset y$, then $x \subseteq y$ and $x \ne y$. But, with the absence of necessary axioms, we cannot even sure that if there are any distinct classes; i.e.,
+$$
+\exists x\; \exists y\; (x \ne y).
+$$
+
 
 ## Fundamental properties of classes
 
@@ -75,7 +103,7 @@ There are eight axioms in MK (see [[../appendix/Index of MK-Axioms|Index of MK-A
 > 
 > In the following discussion, we simply say "predicate" rather than "predicate written in first-order logic in terms of class and membership" to reduce the length of text, if confusions are not alike in the context, unless this property needs to be emphasized.
 
-Class comprehension is the only axiom schema in MK-axiom. Here is a simple word of why it is called an axiom schema. Once a statement is called a schema, it actually includes arbitrarily many statements in the same pattern. Take axiom schema of class comprehension for example. If our language is restricted in the first-order logic, this axiom cannot be completely described, as the expression $\forall \phi(x)$ is not allowed in first-order logic. So, in the formal expression, $\phi(\cdot)$ serves as a placeholder for predicates.
+The axiom of class comprehension is the only axiom schema in MK-axiom. Here is a simple word of why it is called an axiom schema. Once a statement is called a schema, it actually includes arbitrarily many statements in the same pattern. Take axiom schema of class comprehension for example. If our language is restricted in the first-order logic, this axiom cannot be completely described, as the expression $\forall \phi(x)$ is not allowed in first-order logic. So, in the formal expression, $\phi(\cdot)$ serves as a placeholder for predicates.
 
 Class-builder notation, namely, describing set in the form $A = \{x: P(x)\}$, is a useful tool to reduce the length of discussion. This notation is straightforwardly derived from the axiom schema of class comprehension with the axiom of extensionality.
 
@@ -111,21 +139,19 @@ By the axiom schema of class comprehension, there is a class $R = \{x: x \notin 
 > 
 > A class $x$ is a **proper class** if and only if it is not a set, i.e., $\neg M(x)$.
 
-It is an interesting fact that, just as I mentioned in [[Introduction to Set Theory]], the axiom schema of class comprehension only gives predicates a chance to construct a class (by axiom of extensionality, this class is unique), but, it does not guarantee that every class $A$ can be written as $A = \{x: P(x)\}$. So, are there any indescribable class $A$? Neither MK, ZFC, nor NBG gives us an answer for this - it is unsure. So, it is note worthy that, when proving set theoretical theorems, we shall always avoid stating sentences like "(given an arbitrary class $A$,) let $P(x)$ be a predicate such that $A = \{x: P(x)\}$."
+As MK is a first-order logic axiomatization of set theory, by the axiom schema of class comprehension, every predicate $P(x)$ written in the terms of $\neg$, $\forall$, $\lor$, $($, $)$, $\in$, with sets, $x$, $y$, $x$, ... constructs a class. ($\exists$, $\lor$, $\Rightarrow$, etc., can be derived from other first-order logic symbols). If a class $A$ is only constructed from a single set $x$, then we say $A$ is constructed from $x$, or $x$-constructible. For example, $\emptyset$, $\{\emptyset\}$, and $\{\emptyset, \{\emptyset\}\}$ is $\emptyset$-constructible. Later, we will discuss why these classes are sets.
+
+But, note that, just as I mentioned in [[Introduction to Set Theory]], the axiom schema of class comprehension only gives predicates a chance to construct a class (by axiom of extensionality, this class is unique), but, it does not guarantee that every class $A$ can be written as $A = \{x: P(x)\}$. So, are there any indescribable class $A$? Neither MK, ZFC, nor NBG gives us an answer for this - it is unsure. So, it is note worthy that, when proving set theoretical theorems, we shall always avoid stating sentences like "(given an arbitrary class $A$,) let $P(x)$ be a predicate such that $A = \{x: P(x)\}$." In set theory, it is not guaranteed that every set is constructible.
 
 There are many definitions can be derived from the above two axioms:
 
-1. **Subclass relation**, denoted by $\subseteq$;
-2. **Arbitrary union**, namely, $\bigcup A$ whereas $A$ is a class;
-3. **Arbitrary intersection**, namely, $\bigcap A$ where as $A$ is a class;
-4. **Unordered pair**, namely, the class in the form of $\{x,y\}$ whereas $x$ and $y$ are sets;
-5. **Empty class**, denoted by $\emptyset$, which can be obtained by $\emptyset = \{x: x \ne x\}$;
-6. **Universal class**, or **universe**, $\mathscr U = \{x : M(x)\}$.
+1. **Arbitrary union**, namely, $\bigcup A$ whereas $A$ is a class;
+2. **Arbitrary intersection**, namely, $\bigcap A$ where as $A$ is a class;
+3. **Unordered pair**, namely, the class in the form of $\{x,y\}$ whereas $x$ and $y$ are sets;
+4. **Empty class**, denoted by $\emptyset$, which can be obtained by $\emptyset = \{x: x \ne x\}$;
+5. **Universal class**, or **universe**, $\mathscr U = \{x : M(x)\}$.
 
-The above definitions are well-known, so I do not elaborate further here. However, there are several noteworthy facts related to these definitions.
-
-1. The subclass relation is defined between two classes $x$ and $y$, and none of the axiom above guarantees that $x$ must be a set if $x \subseteq y$ with $M(y)$ - this is guaranteed by another MK-axiom.
-2. The objects defined above are classes. None of the axioms above guarantees that any of them to be a set. Indeed, some of them are sets in MK, but they are guaranteed by other MK-axioms.
+The above definitions are well-known, so I do not elaborate further here. However, there is a noteworthy fact related to these definitions: the objects defined above are classes. None of the axioms above guarantees that any of them to be a set. Indeed, some of them are sets in MK, but they are guaranteed by other MK-axioms.
 
 > [!definition]
 > 
@@ -157,7 +183,23 @@ And, by the notation in the definition of successor, $x^+ = x \cup \{x\}$.
 
 It is a straight corollary that $x \notin x$ for any set $x$. Aiming for a contradiction, suppose there is a set $x \in x$. By the axiom schema of class comprehension, there is a class $\{x\} = \{u: u = x\}$, and $x \in \{x\}$ as $x = x$. As $x \in x$ and $x \in \{x\}$, we have $x \in x \cap \{x\}$. As $x$ is the only element in $\{x\}$, the axiom of regularity is contradicted.
 
-A consequence of this is that the universe $\mathscr U = \{x: M(x)\}$ is a proper class. Because, if it is a set, then $M(\mathscr U)$ implies $\mathscr U \in \mathscr U$, contradicting the axiom of regularity.
+Thus, there are many distinct sets in the universe $\mathscr U$; i.e.,
+
+$$
+\exists x\; \exists y\; (x \ne y),
+$$
+
+because, at least, we have $x \ne \{x\}$. If we invoke natural numbers, then, the above axioms bring us infinitely many sets in the universe. For example, for any natural number $n$, let
+
+$$
+x_n := \underbrace{\left\{
+\cdots \underbrace{\left\{ \underbrace{ \{x_0\} }_{x_1} \right\}}_{x_2} \cdots
+\right\}}_{x_n}
+$$
+
+Then, for any natural numbers $j$ and $k$, if $j \ne k$, then $x_i \ne x_k$.
+
+Another consequence of this is that the universe $\mathscr U = \{x: M(x)\}$ is a proper class. Because, if it is a set, then $M(\mathscr U)$ implies $\mathscr U \in \mathscr U$, contradicting the axiom of regularity.
 
 Is it possible that $x \in x$ if $x$ is a proper class other than $\mathscr U$? In MK, this can be proven without invoking the axiom of regularity. Let $x$ be a proper class. If $x \in x$, then the property $M(x)$ is satisfied, contradicting the definition of proper class.
 

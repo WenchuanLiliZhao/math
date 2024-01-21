@@ -1,5 +1,6 @@
 {
   "newLinkFormat": "relative",
   "alwaysUpdateLinks": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showLineNumber": true
 }
