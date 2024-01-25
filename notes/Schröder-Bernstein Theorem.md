@@ -46,6 +46,8 @@ Then, by the transitivity of $\sim_e$, as $B \sim_e g[B]$, we have $B \sim_e A$.
 
 > [!lemma]
 > 
+> #### 
+> 
 > Let $X$ be a set, and let $f: X \to X$ be a injection. Then, for any set $Y$, if $f[X] \subseteq Y \subseteq X$, then $X \sim_e Y$.
 
 **Proof.** Let $Y$ be a set with $f[X] \subseteq Y \subseteq X$. Since $f$ is injective, $X \sim_e f[X]$. As $f[X] \subseteq X$, either $f[X] = X$ or $f[X] \subset X$. If $f[X] = X$, then we have $X = Y$, which implies $X \sim_e Y$. Thus, assume $f[X] \subset X$. (In this case, $X$ is Dedekind infinite.)
