@@ -1,11 +1,20 @@
 > [!art_title]
 > 
-> # Relations and Functions
+> # Limitation of Sizes
 > 
+
+
+
+Do you know the pigeonhole principle in elementary set theory? Let $P$ be a set with $n \in \mathbb N$ elements (pigeons) and $H$ be a set with $m \in \mathbb N$ elements (pigeonholes). Then, the following expressions are equivalent:
+
+1. For any function $f: P \to H$, there are $p, p' \in P$ with $p \ne p'$ such that $f(p) = f(p') \in H$.
+2. $n > m$.
+
+In our axiomatization, sets are compared in terms of their size in a similar way. Before we delve into this topic, let's define some useful terms.
 
 ## Cartesian products
 
-No doubt, Cartesian products is a concept generalized from Cartesian coordinates systems by "throwing away" the their geometric properties. Thus, given two classes $X$ and $Y$, the Cartesian product $X \times Y$ is the class of all possible ordered pairs $(x,y)$ whereas $x \in X$ and $y \in Y$. As classes are the only primitive objects in set theory, we must explain ordered pairs $(x,y)$ as classes.
+Cartesian products is a concept generalized from Cartesian coordinates systems by "throwing away" the their geometric properties. Given two classes $X$ and $Y$, the Cartesian product $X \times Y$ is the class of all possible ordered pairs $(x,y)$ whereas $x \in X$ and $y \in Y$. As classes are the only primitive objects in set theory, we must explain ordered pairs $(x,y)$ as classes.
 
 There are ways to define ordered pairs as sets (see [*Ordered pair*](https://en.wikipedia.org/wiki/Ordered_pair#Kuratowski's_definition) on Wikipedia). In this blog, we introduce one of them.
 
@@ -100,4 +109,72 @@ f: X \to Y : x \mapsto f(x).
 $$
 
 Note that, in the definitions above, Cartesian products, relations and functions are defined as classes, but not necessarily sets. Thus, in set theoretical axiomatization without proper classes, for example ZFC, function has to be defined in a different path, since we have to show that the existence of the Cartesian products $X \times Y$ does exists as a set whereas $X$ and $Y$ are sets in the first place.
+
+## Comparing of sizes in terms of functions
+
+Do you know the pigeonhole principle in elementary set theory? Let $P$ be a set with $n \in \mathbb N$ elements (pigeons) and $H$ be a set with $m \in \mathbb N$ elements (pigeonholes). Then, the following expressions are equivalent:
+
+1. For any function $f: P \to H$, there are $p, p' \in P$ with $p \ne p'$ such that $f(p) = f(p') \in H$.
+2. $n > m$.
+
+In our axiomatization, sets are compared in terms of their size in a similar way. Before we delve into this topic, let's define some useful terms.
+
+> [!definition]
+> 
+> ####
+> 
+> Let $X$ and $Y$ be two classes, and let $f: X \to Y$ be a function.
+> 
+> $f$ is **injective** (or a **injection**) if and only if for any $x, x' \in X$
+> $$
+> f(x) = f(x') \implies x = x'.
+> $$
+> 
+> $f$ is **surjective** (or a **surjection**) if and only if for any $y \in Y$, there is an $x \in X$ such that $y = f(x)$.
+> 
+> $f$ is **bijective** (or a **bijection**) if and only if it is injective and surjective.
+
+These terms are indeed well-defined in the system, considering the function $\imath: X \to X$ for a class $X$ be defined as $\imath(x): = x$.
+
+> [!definition]
+> 
+> #### Equipotent  classes
+> 
+> Let $X$ and $Y$ be two classes.
+> 
+> We write $X \le_e Y$ if and only if there is a function $f: X \to Y$ being injective.
+> 
+> $X$ and $Y$ are said to be **equipotent**, denoted by $X \sim_e Y$, if and only if there is a function $f:X \to Y$ being bijective.
+> 
+> We write $X <_e Y$ if and only $X \le_e Y$ but $\neg(X \sim_e Y)$.
+
+In a general sense, $X <_e Y$ means that $X$ is smaller than $Y$ in terms of size. In the example of the pigeonhole principle above, $P$ is larger than $H$ in size, as we have $P <_e H$. This is an example of comparing the sizes of finite sets.
+
+However, the situation becomes more intriguing if both $X$ and $Y$ are infinite, where their sizes cannot be represented by any natural numbers. For example, $\mathbb N \sim_e \mathbb Q$ and $\mathbb N <_e \mathbb R$.
+
+## How large is arbitrary large?
+
+There is an intuitive way to distinguish if a class is a proper class or a set: If a class is as large as "arbitrarily large" in size, then it must be a proper class.
+
+Since $\mathscr U$ is our universe, no class can be larger than $\mathscr U$, even for some seemingly larger classes, e.g., $\mathscr U \times \mathscr U \subseteq \mathscr U$. So, every class $C \ge_e \mathscr U$ must be arbitrary large.
+
+For example, let $C$ be the class of all singletons in $\mathscr U$; i.e.,
+$$
+C = \{ x \in \mathscr U: \forall y,y'\; (y,y' \in x \implies y = y') \}.
+$$
+Then, $C \ge_e \mathscr U$, as there is a function
+$$
+f: \mathscr U \to C: x \mapsto \{x\}
+$$
+being injective.
+
+It is uncertain whether there exists a proper class $C$ such that $C <_e \mathscr{U}$. Nonetheless, John von Neumann believed that such a class could not exist. Therefore, he proposed this as an axiom in his system, which was later included in NBG and MK.
+
+> [!statement]
+> 
+> #### Axiom of limitation of size
+> 
+> A class $C$ is a proper class if and only if there is a function $f: \mathscr U \to C$ being injective.
+
+## Schema of specification
 

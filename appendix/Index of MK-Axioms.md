@@ -39,12 +39,11 @@
 > For any sets $x$ and $y$, the unordered pair $\{x,y\}$ is a set.
 
 
-
 > [!statement]
 > 
 > #### Axiom of limitation of size
 > 
-> For any proper class $C$, there is a function $f: \mathscr U \to C$ being injective.
+> A class $C$ is a proper class if and only if there is a function $f: \mathscr U \to C$ being injective.
 
 
 > [!statement]

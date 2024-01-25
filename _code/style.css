@@ -346,6 +346,11 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
   padding-left: 8px; }
   #main .note li, #main .note p {
     font-size: 14px; }
+#main .quote {
+  padding-left: 24px;
+  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.32);
+  margin: 24px 0;
+  color: rgba(0, 0, 0, 0.56); }
 #main .statement {
   padding: 16px 24px;
   border: 1px solid var(--color-border);
@@ -400,4 +405,20 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
         #main .statement.corollary h4 span::before {
           content: "\("; }
         #main .statement.corollary h4 span::after {
+          content: "\)"; }
+  #main .statement.lemma {
+    counter-increment: lemma; }
+    #main .statement.lemma h4 {
+      margin-top: 9px; }
+      #main .statement.lemma h4 ::before {
+        content: "Lemma " counter(lemma); }
+      #main .statement.lemma h4::after {
+        content: "\."; }
+      #main .statement.lemma h4 span {
+        margin-left: 0.5em; }
+        #main .statement.lemma h4 span:empty {
+          display: none; }
+        #main .statement.lemma h4 span::before {
+          content: "\("; }
+        #main .statement.lemma h4 span::after {
           content: "\)"; }
