@@ -40,6 +40,18 @@
             }
           },
           {
+            "id": "40a92afad8f4b8d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_404.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8bf7d4a70a26c0ca",
             "type": "leaf",
             "state": {
@@ -63,7 +75,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "674c5511280cdbe0",
@@ -130,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "_404.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "_404.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Relations and Functions.md"
+                "file": "_404.md"
               }
             }
           }
@@ -191,11 +203,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "238b69fdae6c31f4",
+  "active": "40a92afad8f4b8d8",
   "lastOpenFiles": [
+    "_404.md",
+    "_404.md",
     "_sidebar.md",
-    "appendix/Index of MK-Axioms.md",
     "notes/Relations and Functions.md",
+    "appendix/Index of MK-Axioms.md",
     "notes/Natural Numbers.md",
     "notes/Limitation of Size.md",
     "notes/Schröder-Bernstein Theorem.md",
