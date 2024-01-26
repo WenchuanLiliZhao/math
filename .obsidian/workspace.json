@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "_sidebar.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/20240101-2.md",
+                "file": "notes/Relations and Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/20240126-0.md",
+                "file": "notes/Natural Numbers.md",
                 "mode": "source",
                 "source": false
               }
@@ -57,7 +57,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/20240120-0.md",
+                "file": "notes/Limitation of Size.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_sidebar.md",
+                "file": "notes/Relations and Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_sidebar.md",
+                "file": "notes/Relations and Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_sidebar.md"
+                "file": "notes/Relations and Functions.md"
               }
             }
           }
@@ -191,16 +191,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2ee6c74c1523449b",
+  "active": "238b69fdae6c31f4",
   "lastOpenFiles": [
-    "appendix/appendix-20240109-0.md",
     "_sidebar.md",
-    "notes/20240101-2.md",
-    "notes/20240126-0.md",
-    "notes/20240120-0.md",
-    "notes/20240110-0.md",
-    "notes/20240101-0.md",
-    "notes/20240101-1.md",
+    "appendix/Index of MK-Axioms.md",
+    "notes/Relations and Functions.md",
+    "notes/Natural Numbers.md",
+    "notes/Limitation of Size.md",
+    "notes/Schröder-Bernstein Theorem.md",
+    "notes/Introduction to Set Theory.md",
+    "notes/Morse-Kelly Set Theory.md",
     "Introduction.md",
     "🍉 my approches/伯恩斯坦-施罗德定理.md",
     "_media/Cantor-Schröder–Bernstein theorem/ring-in-proof@3x.png",
