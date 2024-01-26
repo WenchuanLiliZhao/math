@@ -264,6 +264,12 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
     color: var(--color-text-sec); }
 #main h1 a, #main h2 a, #main h3 a, #main h4 a, #main h5 a, #main h6 a {
   pointer-events: none; }
+#main h1 {
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 32px; }
 #main h2 {
   font-size: 24px;
   line-height: 1.25;

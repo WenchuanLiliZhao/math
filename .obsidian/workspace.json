@@ -6,7 +6,7 @@
       {
         "id": "3043d762bd84ca44",
         "type": "tabs",
-        "dimension": 25,
+        "dimension": 27.16400911161731,
         "children": [
           {
             "id": "2ee6c74c1523449b",
@@ -25,15 +25,39 @@
       {
         "id": "4ce337f39e38a594",
         "type": "tabs",
-        "dimension": 75,
+        "dimension": 72.83599088838268,
         "children": [
           {
-            "id": "a4ed7d440bf21476",
+            "id": "238b69fdae6c31f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/20240110-0.md",
+                "file": "notes/20240101-2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8bf7d4a70a26c0ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/20240126-0.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "666079ee1627b1d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/20240120-0.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/20240110-0.md",
+                "file": "_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/20240110-0.md",
+                "file": "_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,16 +170,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/20240110-0.md"
+                "file": "_sidebar.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,17 +191,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a4ed7d440bf21476",
+  "active": "2ee6c74c1523449b",
   "lastOpenFiles": [
+    "appendix/appendix-20240109-0.md",
     "_sidebar.md",
-    "notes/20240110-0.md",
-    "notes/20240120-0.md",
-    "notes/20240126-0.md",
-    "notes/20240101-0.md",
     "notes/20240101-2.md",
+    "notes/20240126-0.md",
+    "notes/20240120-0.md",
+    "notes/20240110-0.md",
+    "notes/20240101-0.md",
     "notes/20240101-1.md",
     "Introduction.md",
-    "appendix/appendix-20240109-0.md",
     "🍉 my approches/伯恩斯坦-施罗德定理.md",
     "_media/Cantor-Schröder–Bernstein theorem/ring-in-proof@3x.png",
     "_media/Cantor-Schröder–Bernstein theorem/ring-in-proof.svg",
