@@ -6,7 +6,7 @@
       {
         "id": "3043d762bd84ca44",
         "type": "tabs",
-        "dimension": 27.884615384615387,
+        "dimension": 25,
         "children": [
           {
             "id": "2ee6c74c1523449b",
@@ -23,48 +23,23 @@
         ]
       },
       {
-        "id": "6349ab39b7735c83",
+        "id": "4ce337f39e38a594",
         "type": "tabs",
-        "dimension": 72.11538461538461,
+        "dimension": 75,
         "children": [
           {
-            "id": "360e5d3f3e10afcf",
+            "id": "a4ed7d440bf21476",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/Natural Numbers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8e647cfc60ddd8d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb8d4739c60ef196",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "notes/20240110-0.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "674c5511280cdbe0",
@@ -130,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "notes/20240110-0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/Relations and Functions.md",
+                "file": "notes/20240110-0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Relations and Functions.md"
+                "file": "notes/20240110-0.md"
               }
             }
           }
@@ -191,15 +167,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bb8d4739c60ef196",
+  "active": "a4ed7d440bf21476",
   "lastOpenFiles": [
     "_sidebar.md",
+    "notes/20240110-0.md",
+    "notes/20240120-0.md",
+    "notes/20240126-0.md",
+    "notes/20240101-0.md",
+    "notes/20240101-2.md",
+    "notes/20240101-1.md",
     "Introduction.md",
-    "notes/Schröder-Bernstein Theorem.md",
-    "notes/Natural Numbers.md",
-    "notes/Relations and Functions.md",
-    "notes/Limitation of Size.md",
-    "appendix/Index of MK-Axioms.md",
+    "appendix/appendix-20240109-0.md",
     "🍉 my approches/伯恩斯坦-施罗德定理.md",
     "_media/Cantor-Schröder–Bernstein theorem/ring-in-proof@3x.png",
     "_media/Cantor-Schröder–Bernstein theorem/ring-in-proof.svg",
@@ -209,9 +187,7 @@
     "_media/Cantor-Schröder-Bernstein Theorem.svg",
     "🍉 my approches/🍊 Schröder-Bernstein theorem.md",
     "🍉 my approches",
-    "notes/Morse-Kelly Set Theory.md",
     "notes/✏️ Natural Numbers.md",
-    "notes/Introduction to Set Theory.md",
     "_code/styles/callouts.scss",
     "appendix/Reference.md",
     "appendix",
