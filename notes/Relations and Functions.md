@@ -1,6 +1,6 @@
 > [!art_title]
 > 
-> # Limitation of Sizes
+> # Relations and Functions
 > 
 
 
@@ -152,29 +152,5 @@ In a general sense, $X <_e Y$ means that $X$ is smaller than $Y$ in terms of siz
 
 However, the situation becomes more intriguing if both $X$ and $Y$ are infinite, where their sizes cannot be represented by any natural numbers. For example, $\mathbb N \sim_e \mathbb Q$ and $\mathbb N <_e \mathbb R$.
 
-## How large is arbitrary large?
 
-There is an intuitive way to distinguish if a class is a proper class or a set: If a class is as large as "arbitrarily large" in size, then it must be a proper class.
-
-Since $\mathscr U$ is our universe, no class can be larger than $\mathscr U$, even for some seemingly larger classes, e.g., $\mathscr U \times \mathscr U \subseteq \mathscr U$. So, every class $C \ge_e \mathscr U$ must be arbitrary large.
-
-For example, let $C$ be the class of all singletons in $\mathscr U$; i.e.,
-$$
-C = \{ x \in \mathscr U: \forall y,y'\; (y,y' \in x \implies y = y') \}.
-$$
-Then, $C \ge_e \mathscr U$, as there is a function
-$$
-f: \mathscr U \to C: x \mapsto \{x\}
-$$
-being injective.
-
-It is uncertain whether there exists a proper class $C$ such that $C <_e \mathscr{U}$. Nonetheless, John von Neumann believed that such a class could not exist. Therefore, he proposed this as an axiom in his system, which was later included in NBG and MK.
-
-> [!statement]
-> 
-> #### Axiom of limitation of size
-> 
-> A class $C$ is a proper class if and only if there is a function $f: \mathscr U \to C$ being injective.
-
-## Schema of specification
 

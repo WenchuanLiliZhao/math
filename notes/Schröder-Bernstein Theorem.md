@@ -104,7 +104,7 @@ $\blacksquare$
 
 We embed this lemma into the proof outline, then the proof of Schröder-Bernstein Theorem is done.
 
-## Can the Schröder-Bernstein theorem be generalized to type relations?
+## Can Schröder-Bernstein theorem be generalized to classes?
 
 When I first proved the Schröder-Bernstein theorem, I actually encountered a problem, which is: according to the axiom of limitation of size in MK, a class $X$ is a proper class if and only if there exists an function $f:\mathscr U \to X$ being injective. Intuitively, I believed that in this case, there must be a function $b:\mathscr U \to X$ being bijection. However, to prove this claim, we need to generalize the Schröder-Bernstein theorem to any two classes which may not be sets. That is:
 
@@ -115,3 +115,7 @@ When I first proved the Schröder-Bernstein theorem, I actually encountered a pr
 However, if we replace all instances of "set" in the above proof with "classes," then this proof would be invalid. Even if we avoid defining the sequence $\mathcal R$ and only say that for any $i \in \mathbb N$, $R_i$ is a class satisfying $R_i = f^i[X \setminus Y]$, we still have a problem: how can we set $\mathbb N$ as an index set for a sequence of classes $R_0, R_1, R_2, \ldots$ that some of them may be a proper class? Note that the existence of index classes is derived from the definition of functions, and is hereby relied on the axiom of class comprehension. If we say that a class $I$ indices some classes, $C_\alpha, C_\beta, C_\gamma,\ldots$, then this means that we acknowledge the existence of a function from $I$ to the collection $\mathcal C$ of $C_\alpha, C_\beta, C_\gamma,\ldots$. If there exists some $i \in I$ such that $C_i$ is not a set, then $\mathcal C$ cannot exist in our system. This is also why the union and intersection of any number of proper types cannot be defined.
 
 Therefore, at least according to the above proof, we cannot generalize the Schröder-Bernstein theorem to classes. If we accept a more extensive "set theory" that allows proper classes as elements, or if we accept the axiom of choice and avoid constructing classes like $\mathcal R$ in the proof above, then this generalization would be much simpler - at least in these two cases, it is possible.
+
+## Problems remained
+
+- How to generalize Schröder-Bernstein theorem to classes in MK?

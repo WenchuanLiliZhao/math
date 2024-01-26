@@ -262,17 +262,19 @@ body.close main .sidebar-toggle .sidebar-toggle-button {
     font-size: 20px;
     font-weight: bold;
     color: var(--color-text-sec); }
+#main h1 a, #main h2 a, #main h3 a, #main h4 a, #main h5 a, #main h6 a {
+  pointer-events: none; }
 #main h2 {
-  font-size: 32px;
-  line-height: 1.25;
-  margin-top: 0.75em;
-  margin-bottom: 0.5em;
-  font-weight: bold; }
-#main h3 {
   font-size: 24px;
   line-height: 1.25;
-  margin-top: 0.75em;
-  margin-bottom: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: bold; }
+#main h3 {
+  font-size: 18px;
+  line-height: 1.25;
+  margin-top: 2em;
+  margin-bottom: 1em;
   font-weight: bold; }
 #main h4 {
   font-size: 1rem;

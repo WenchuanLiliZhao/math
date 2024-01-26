@@ -4,55 +4,66 @@
     "type": "split",
     "children": [
       {
-        "id": "9b7640750e35decd",
+        "id": "3043d762bd84ca44",
         "type": "tabs",
+        "dimension": 31.043956043956044,
         "children": [
           {
-            "id": "3e16c42d0e0379a4",
+            "id": "2ee6c74c1523449b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/Schröder-Bernstein Theorem.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "6c6c83bb98ca1e0f"
-          }
-        ]
-      },
-      {
-        "id": "662ee9c5e1486b7d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "90093d013c08ec3d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/Schröder-Bernstein Theorem.md",
-                "mode": "preview",
-                "source": false
-              }
-            },
-            "group": "6c6c83bb98ca1e0f"
-          },
-          {
-            "id": "bf3eebb74d69ec31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🍉 my approches/伯恩斯坦-施罗德定理.md",
+                "file": "_sidebar.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "6349ab39b7735c83",
+        "type": "tabs",
+        "dimension": 68.95604395604396,
+        "children": [
+          {
+            "id": "1be2875684211d60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/Schröder-Bernstein Theorem.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "902218fdf5e9b3d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "appendix/Index of MK-Axioms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b88ea780242d0efc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/Relations and Functions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -179,22 +190,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e16c42d0e0379a4",
+  "active": "1be2875684211d60",
   "lastOpenFiles": [
-    "🍉 my approches/伯恩斯坦-施罗德定理.md",
-    "notes/Schröder-Bernstein Theorem.md",
     "_sidebar.md",
+    "notes/Limitation of Size.md",
+    "appendix/Index of MK-Axioms.md",
+    "notes/Relations and Functions.md",
+    "notes/Schröder-Bernstein Theorem.md",
+    "🍉 my approches/伯恩斯坦-施罗德定理.md",
     "_media/Cantor-Schröder–Bernstein theorem/ring-in-proof@3x.png",
     "_media/Cantor-Schröder–Bernstein theorem/ring-in-proof.svg",
     "_media/Cantor-Schröder–Bernstein theorem/proof-strategy@3x.png",
     "_media/Cantor-Schröder–Bernstein theorem/proof-strategy.svg",
     "_media/Cantor-Schröder–Bernstein theorem",
-    "notes/Relations and Functions.md",
     "_media/Cantor-Schröder-Bernstein Theorem.svg",
     "🍉 my approches/🍊 Schröder-Bernstein theorem.md",
     "🍉 my approches",
-    "notes/Limitation of Size.md",
-    "appendix/Index of MK-Axioms.md",
     "notes/Morse-Kelly Set Theory.md",
     "notes/✏️ Natural Numbers.md",
     "notes/Introduction to Set Theory.md",

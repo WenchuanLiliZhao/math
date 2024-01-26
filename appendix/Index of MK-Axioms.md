@@ -50,8 +50,6 @@
 > 
 > #### Axiom of power set
 > 
-> For any set $x$, the power $\mathcal P(x)$ is a set. In symbols,
-> 
 > $$
 > \forall x\; \forall p\; ((M(x) \land \forall y\; (y \in p \iff y \subseteq x)) \implies M(p)).
 > $$
