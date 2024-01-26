@@ -54,5 +54,3 @@ In the following discussions, we will also see that, in order to define cardinal
 ---
 
 I am delighted to share mathematical knowledge with you. In my opinion, there is nothing more enjoyable than witnessing the birth and growth of an axiomatic system. This sharing process will be long, because I hope to gradually increase and improve the foundations of all branches of mathematics that I have seen in mathematical analysis in this website. I do not expect to create anything original in this process, but I will try my best to explain it clearly. To understand these things, we must be both cautious and imaginative.
-
-In addition, I will use natural language as much as possible to describe what I know, just like chatting while strolling in the woods.

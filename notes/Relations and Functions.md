@@ -138,13 +138,13 @@ These terms are indeed well-defined in the system, considering the function $\im
 
 > [!definition]
 > 
-> #### Equipotent  classes
+> #### Equinumerous  classes
 > 
 > Let $X$ and $Y$ be two classes.
 > 
 > We write $X \le_e Y$ if and only if there is a function $f: X \to Y$ being injective.
 > 
-> $X$ and $Y$ are said to be **equipotent**, denoted by $X \sim_e Y$, if and only if there is a function $f:X \to Y$ being bijective.
+> $X$ and $Y$ are said to be **equinumerous**, denoted by $X \sim_e Y$, if and only if there is a function $f:X \to Y$ being bijective.
 > 
 > We write $X <_e Y$ if and only $X \le_e Y$ but $\neg(X \sim_e Y)$.
 
@@ -152,5 +152,7 @@ In a general sense, $X <_e Y$ means that $X$ is smaller than $Y$ in terms of siz
 
 However, the situation becomes more intriguing if both $X$ and $Y$ are infinite, where their sizes cannot be represented by any natural numbers. For example, $\mathbb N \sim_e \mathbb Q$ and $\mathbb N <_e \mathbb R$.
 
+## Generalized the ordering on the universe
 
+Editing...
 

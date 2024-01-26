@@ -79,7 +79,7 @@ However, in MK, the axiom of power set is stated differently and irrelevant to t
 > 
 > Let $P(x)$ be a predicate. Then, for any $A$, if $A$ is a class, then there is a set $B$, such that $B = \{x \in A : P(x)\}$.
 
-This is an axiom in ZFC. If we use the term class, schema of specification states that: every subclass of any set is a set. Thus, the proposition is sometimes called the axiom of subset.
+This is an axiom in ZFC. If we use the term class, schema of specification states that: every subclass of any set is a set.
 
 **Proof.** Suppose $A$ is a set, but $B \subseteq A$ is not. Then, there is a function $f: \mathscr U \to B$ being injective. Then, $f$ is injective from $\mathscr U$ to $A$, as $B \subseteq A$. Then, $A$ is not a set, contradicting the assumption that $A$ is a set.
 
@@ -123,27 +123,47 @@ $\blacksquare$
 
 The schema of replacement also derives the schema of specification. It is not hard to prove, so I do not elaborate on this.
 
-
 ## Introduction to the axiom of choice
 
 There are some important consequences derived from the limitation of size. Some of them are famously controversial.
 
 > [!statement]
 > 
+> #### Axiom of choice
+> 
+> For any set $A$, if $\emptyset \notin A$, then there is a function $f: A \to \bigcup A$ satisfies $f(x) \in x$ for any $x \in A$.
+
+The axiom of choice is a useful proposition in many cases, as it can simplify the proofs of many theorems, for examples, some theorems in general topology. However, some mathematicians prefer to avoid using it and instead prove theorems without invoking this axiom if it is possible. On one hand, indeed, sometimes, in order to prove a theorem, we need to verify the smallest axiomatized model relative to that theorem. In other words, we need to know the minimum number of axioms required to prove the theorem. On the other hand, the axiom of choice is controversial because its statement does not provide us with any method for finding the choice function $f$, but only asserts its existence.
+
+But, some important branches of set theory rely on the axiom of choice. For example, for defining cardinal numbers (the classes representing the sizes of sets) as sets rather than proper classes, invoking the axiom of choice is inevitable, as it derives more fundamental concepts in which terms the class of all cardinal numbers is defined.
+
+In MK, however, the axiom of choice is an axiom derived from the axiom of limitation of size, and it is hereby a theorem. In addition, the limitation of size also implies the existence of the global choice function.
+
+> [!statement]
+> 
 > #### Axiom of global choice
 > 
-> There is a function $f: \mathscr U \setminus \{\emptyset\} \to \bigcup (\mathscr U \setminus \{\emptyset\})$ such that
+> There is a function $f: \mathscr U \setminus \{\emptyset\} \to \mathscr U \setminus \{\emptyset\}$ such that
 > 
 > $$
 > \forall x\; (x \in \mathscr U \setminus \{\emptyset\} \implies f(x) \in x).
 > $$
 
+The usually form the axiom of choice can be derived from the axiom of global choice.
 
-> [!statement]
-> 
-> #### Axiom of choice
-> 
-> For any set $A$, there is a function $f: A \to \bigcup A$ satisfies $f(x) \in x$ for any $x \in A$.
+So, as the limitation of size derives such two propositions, does it means the consistency of MK rely on the axiom of choice? Yes, but we have an option. Consider this diagram:
+
+$$
+\text{LS}
+\begin{cases}
+\implies \text{AGC} \implies \text{AC} \\
+\implies \text{SR} \implies \text{SS}
+\end{cases}
+$$
+
+In this diagram LS denotes for the limitation of size, ACG denotes for the axiom of global choice, AC denotes for the axiom of choice, SR denotes for the schema of replacement, and SS denotes for the schema of specification.
+
+If the axiom of choice fails, by the property of $\Rightarrow$, every proposition that can imply the axiom of choice fails. But, even if so, the schema of replacement still might hold, and we can accept it as an axiom.
 
 
 
